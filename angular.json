@@ -123,6 +123,10 @@
           }
         }
       }
-    }},
-  "defaultProject": "CafeContinent"
+    }
+  },
+  "defaultProject": "CafeContinent",
+  "cli": {
+    "analytics": "4292f166-9284-47a8-8a24-31063555eef5"
+  }
 }
