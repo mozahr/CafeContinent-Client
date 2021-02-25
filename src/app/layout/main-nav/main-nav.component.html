@@ -5,12 +5,7 @@
         <div class="row">
           <div class="col-12">
             <nav class="navbar navbar-expand-xl navbar-light">
-              <a class="navbar-brand animsition-link d-xl-none" href="/">
-                <img
-                  src="~/Themes/CaffeContinent/Content/images/logo_White.png"
-                  alt="logo"
-                />
-              </a>
+    
 
               <button
                 class="navbar-toggler"
@@ -27,19 +22,20 @@
               <div class="collapse navbar-collapse" id="navbarSupportedContent">
                 <ul class="col-4 navbar-nav pt-4 pt-xl-0 pr-0">
                   <li class="nav-item">
-                    <a class="nav-link" href=""> Nos Cafés </a>
+                    <a class="nav-link" [routerLinkActive]="['active']" [routerLink]="['ourcoffe']"> Cafés </a>
                   </li>
 
-                  <li class="nav-item dropdown">
+                  <li class="nav-item dropdown" appNavDropdown>
                     <a
-                      class="nav-link active"
+                      class="nav-link"
+                      [routerLinkActive]="['active']"
                       data-toggle="dropdown"
                       role="button"
                       aria-haspopup="true"
                       aria-expanded="false"
                       href="#"
                     >
-                      Nos Boutiques
+                      Boutiques
                     </a>
                     <div class="dropdown-menu">
                       <ul class="p-0 m-0">
@@ -56,18 +52,38 @@
                       </ul>
                     </div>
                   </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href=""> Partenaires
+                    </a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href=""> Formations
+                    </a>
+                  </li>
                 </ul>
                 <div class="col-4 text-center d-none d-xl-block">
                   <a
                     class="navbar-brand animsition-link d-inline-block"
-                    href="/"
+                    [routerLinkActive]="['active']"
+                    [routerLink]="['']"
                   >
                     <img
-                      src="~/Themes/CaffeContinent/Content/images/logo.png"
+                      src="../../../assets/images/logo.png"
                       alt="logo"
                     />
                   </a>
                 </div>
+                
+                <div class="col-12 col-lg-4 text-xl-right header-links">
+                    <a class="nav-link" role="button" [routerLinkActive]="['active']" href="">Contact</a>
+
+                  <a href=""
+                     class="btn btn-icon-transparent btn-44 mt-4 mt-xl-0 position-relative" data-toggle="modal" data-target="#modalCart">
+                      <i class="uil uil-cart size-20"></i>
+                      <span class="btn-small-icon bg-primary color-white cart-qty"></span>
+                  </a>
+              </div>
+              
               </div>
             </nav>
           </div>

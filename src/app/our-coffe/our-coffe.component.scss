@@ -1,0 +1,19 @@
+.continentCoverBg {
+    background-size: cover;
+    background-repeat: repeat;
+    height: 400px;
+}
+.continent-item {
+    display: flex;
+    flex: column;
+    align-items: center;
+    .title{
+        min-width: 300px;
+        text-align: center;
+        span{
+            font-size: 22px;
+        }
+    }
+    .pattern {
+    }
+}

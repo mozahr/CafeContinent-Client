@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { SwiperOptions } from 'swiper';
 
 @Component({
   selector: 'app-home',
@@ -6,6 +7,17 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./home.component.scss']
 })
 export class HomeComponent implements OnInit {
+
+  public swiperConfig: SwiperOptions = {
+    a11y: { enabled: true },
+    direction: 'horizontal',
+    slidesPerView: 1.5,
+    keyboard: true,
+    mousewheel: true,
+    scrollbar: false,
+    navigation: true,
+    pagination: false
+  };
 
   constructor() { }
 
