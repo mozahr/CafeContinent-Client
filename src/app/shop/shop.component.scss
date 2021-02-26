@@ -1,0 +1,12 @@
+.page-nav {
+    .link{
+        cursor: pointer;
+        margin: 0 10px;
+      &.active{
+            color: white;
+      }
+      &:hover{
+          color: white;
+      }
+    }
+}

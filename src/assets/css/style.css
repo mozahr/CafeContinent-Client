@@ -8289,67 +8289,8 @@ body.modal-open {
 
 .swiper-testimonials{
 }
-.swiper-wrapper{
-	list-style: none;
-	margin: 0;
-	padding: 0;
-}
-.swiper-slide{
-	width: 100%;
-	margin: 0;
-	padding: 0;
-}
-.swiper-button-next,
-.swiper-button-prev{
-    position:absolute;
-    top: auto;
-    bottom: 0;
-    border-radius: 4px;
-    border: none;
-    background-color: transparent;
-    color: var(--secondary);
-    text-align: center;
-    font-size: 16px;
-    font-weight: 500;
-    letter-spacing: 0.2px;
-    line-height: 50px;
-    width: 50px;
-    height: 50px;
-    margin-top: 0;
-    z-index: 10;
-    cursor: pointer;
-    background-image: none;
-    transition: all 200ms linear;
-}
-.swiper-button-next:hover,
-.swiper-button-prev:hover{
-    border-color: transparent;
-    background-color: transparent;
-    box-shadow: none;
-    color: var(--primary);
-}
-.swiper-button-prev{
-    right: 50px;
-    left: auto;
-}
-.swiper-button-next{
-    right: 0;
-    left: auto;
-}
-.swiper-button-next:active,
-.swiper-button-prev:active,
-.swiper-button-next:focus,
-.swiper-button-prev:focus{
-    border: none;
-    outline: none;
-    box-shadow: none;
-}
-.swiper-button-next.swiper-button-disabled,
-.swiper-button-prev.swiper-button-disabled{
-    opacity:.25;
-    cursor: auto;
-    pointer-events: none;
-}
+
+
 
 .testimonials-wrap-1 img{
 	width: 60px;

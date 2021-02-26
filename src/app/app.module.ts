@@ -9,6 +9,9 @@ import { NavDropdownDirective } from './directives/nav-dropdown.directive';
 import { SwiperModule } from 'swiper/angular';
 import { FooterComponent } from './layout/footer/footer.component';
 import { OurCoffeComponent } from './our-coffe/our-coffe.component';
+import { ShopComponent } from './shop/shop.component';
+import { EShopComponent } from './shop/e-shop/e-shop.component';
+import { LocalShopComponent } from './shop/local-shop/local-shop.component';
 @NgModule({
   declarations: [
     AppComponent,
@@ -16,7 +19,10 @@ import { OurCoffeComponent } from './our-coffe/our-coffe.component';
     HomeComponent,
     NavDropdownDirective,
     FooterComponent,
-    OurCoffeComponent
+    OurCoffeComponent,
+    ShopComponent,
+    EShopComponent,
+    LocalShopComponent
   ],
   imports: [
     BrowserModule,
