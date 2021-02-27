@@ -5,17 +5,10 @@
         <div class="row">
           <div class="col-12">
             <nav class="navbar navbar-expand-xl navbar-light">
-    
 
-              <button
-                class="navbar-toggler"
-                type="button"
-                data-toggle="collapse"
-                data-target="#navbarSupportedContent"
-                aria-controls="navbarSupportedContent"
-                aria-expanded="false"
-                aria-label="Toggle navigation"
-              >
+
+              <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
+                aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
                 <span class="navbar-toggler-icon"></span>
               </button>
 
@@ -26,61 +19,47 @@
                   </li>
 
                   <li class="nav-item dropdown" appNavDropdown>
-                    <a
-                      class="nav-link"
-                      [routerLinkActive]="['active']"
-                      [routerLink]="['shop']"
-
-                    >
+                    <a class="nav-link" [routerLinkActive]="['active']" [routerLink]="['shop']">
                       Boutiques
                     </a>
                     <div class="dropdown-menu">
                       <ul class="p-0 m-0">
                         <li class="nav-item">
-                          <a class="dropdown-item animsition-link"  [routerLink]="['/e-shop']"
-                            >E-Shop</a
-                          >
+                          <a class="dropdown-item animsition-link" [routerLink]="['/e-shop']">E-Shop</a>
                         </li>
                         <li class="nav-item">
                           <a class="dropdown-item animsition-link" [routerLink]="['shop']">
-                            Boutique</a
-                          >
+                            Boutique</a>
                         </li>
                       </ul>
                     </div>
                   </li>
                   <li class="nav-item">
-                    <a class="nav-link" href=""> Partenaires
+                    <a class="nav-link" [routerLinkActive]="['active']" [routerLink]="['partners']"> Partenaires
                     </a>
                   </li>
                   <li class="nav-item">
-                    <a class="nav-link" href=""> Formations
+                    <a class="nav-link" [routerLinkActive]="['active']" [routerLink]="['formations']"> Formations
                     </a>
                   </li>
                 </ul>
                 <div class="col-4 text-center d-none d-xl-block">
-                  <a
-                    class="navbar-brand animsition-link d-inline-block"
-                    [routerLinkActive]="['active']"
-                    [routerLink]="['']"
-                  >
-                    <img
-                      src="../../../assets/images/logo.png"
-                      alt="logo"
-                    />
+                  <a class="navbar-brand animsition-link d-inline-block" [routerLinkActive]="['active']"
+                    [routerLink]="['']">
+                    <img src="../../../assets/images/logo.png" alt="logo" />
                   </a>
                 </div>
-                
-                <div class="col-12 col-lg-4 text-xl-right header-links">
-                    <a class="nav-link" role="button" [routerLinkActive]="['active']" href="">Contact</a>
 
-                  <a href=""
-                     class="btn btn-icon-transparent btn-44 mt-4 mt-xl-0 position-relative" data-toggle="modal" data-target="#modalCart">
-                      <i class="uil uil-cart size-20"></i>
-                      <span class="btn-small-icon bg-primary color-white cart-qty"></span>
+                <div class="col-12 col-lg-4 text-xl-right header-links">
+                  <a class="nav-link" role="button" [routerLinkActive]="['active']" href="">Contact</a>
+
+                  <a href="" class="btn btn-icon-transparent btn-44 mt-4 mt-xl-0 position-relative" data-toggle="modal"
+                    data-target="#modalCart">
+                    <i class="uil uil-cart size-20"></i>
+                    <span class="btn-small-icon bg-primary color-white cart-qty"></span>
                   </a>
-              </div>
-              
+                </div>
+
               </div>
             </nav>
           </div>

@@ -1,17 +1,4 @@
-<div class="page-nav section over-hide bg-black">
 
-    <div class="row" style="padding-top:20px;padding-bottom:20px">
-        <div class="col-12 text-center">
-            <a class="link" [routerLinkActive]="['active']" [routerLink]="['/e-shop']">
-                E-Shop
-            </a>
-            <a class="link" [routerLinkActive]="['active']" [routerLink]="['/shop']">
-                Boutique
-            </a>
-        </div>
-
-    </div>
-
-</div>
+<app-black-bar [type]="'links'" [links]="links"></app-black-bar>
 <app-e-shop *ngIf="isEShop"></app-e-shop>
 <app-local-shop *ngIf="isShop"></app-local-shop>

@@ -1,0 +1,16 @@
+<div class="page-nav section over-hide bg-black">
+
+    <div class="row" style="padding-top:20px;padding-bottom:20px">
+        <div class="col-12 text-center">
+            <span *ngIf="type === 'links'">
+                <a *ngFor="let item of links" class="link" [routerLinkActive]="['active']" [routerLink]="item.route">
+              {{item.text}}
+                </a>
+            </span>
+            <span class="text"  *ngIf="type === 'title'">
+                    {{text}}
+            </span>
+        </div>
+
+    </div>
+</div>

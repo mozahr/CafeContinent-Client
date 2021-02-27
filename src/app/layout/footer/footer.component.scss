@@ -1,0 +1,54 @@
+@import "./../../../styles/base/variables";
+
+footer {
+    .title {
+        color: white;
+        font-family: "AvenirNext-Medium";
+    }
+    .section-1 {
+        order:1;
+        margin-bottom:20px;
+        .address {
+            color: white;
+            .mail-link {
+                color: orange;
+                text-decoration: underline;
+            }
+        }
+    }
+    .section-2 {
+        align-items: center;
+        justify-content: center;
+        display: flex;
+        order: 0;
+        margin-bottom:20px ;
+        .logo {
+            width: 50%;
+        }
+    }
+    .section-3{
+        order: 2;
+        .social-icon{
+            height: 40px;
+        }
+    }
+}
+
+@media screen and (min-width: $lg) {
+    footer {
+        .section-1 {
+            order:0;
+            margin-bottom:0;
+        }
+        .section-2 {
+            order:1;
+            margin-bottom:0;
+            .logo {
+                width: 100%;
+            }
+        }
+        .section-3{
+            order:2;
+        }
+    }
+}

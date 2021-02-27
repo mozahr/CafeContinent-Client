@@ -13,6 +13,9 @@ import { ShopComponent } from './shop/shop.component';
 import { EShopComponent } from './shop/e-shop/e-shop.component';
 import { LocalShopComponent } from './shop/local-shop/local-shop.component';
 import { MainNavDirective } from './directives/main-nav.directive';
+import { PartnersComponent } from './partners/partners.component';
+import { FormationComponent } from './formation/formation.component';
+import { BlackBarComponent } from './components/black-bar/black-bar.component';
 @NgModule({
   declarations: [
     AppComponent,
@@ -24,7 +27,10 @@ import { MainNavDirective } from './directives/main-nav.directive';
     ShopComponent,
     EShopComponent,
     LocalShopComponent,
-    MainNavDirective
+    MainNavDirective,
+    PartnersComponent,
+    FormationComponent,
+    BlackBarComponent
   ],
   imports: [
     BrowserModule,

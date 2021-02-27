@@ -10,6 +10,7 @@ import { filter } from 'rxjs/operators';
 export class ShopComponent implements OnInit {
   isShop: Boolean;
   isEShop: Boolean;
+  links = [{"route":"/e-shop","text":"E-Shop"},{"route":"/shop","text":"Boutique"}];
   constructor(private _router: Router) {
     _router.events.pipe(
       filter(event => event instanceof NavigationEnd)
