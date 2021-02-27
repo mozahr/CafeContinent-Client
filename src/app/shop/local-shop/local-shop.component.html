@@ -8,46 +8,31 @@
 <!-- Pictures section
     ================================================== -->
 
-<div class="swiper-container">
-                    <swiper [slidesPerView]="3" [spaceBetween]="10" [autoplay]="true">
-                        <ng-template swiperSlide>
-                            <div class="section country-image-container full-img border-4">
+<div class="swiper-container container .swiper-container-horizontal">
+    <swiper [slidesPerView]="3" [spaceBetween]="10" [autoplay]="true"  [pagination]="{ clickable: true }">
+        <ng-template swiperSlide *ngFor="let img of storeImages">
+            <div class="section country-image-container full-img border-4">
 
-                                <img src="../../../assets/images/store-pic-1.png" alt="">
-
-
-                            </div>
-                        </ng-template>
-                        <ng-template swiperSlide>
-                            <div class="section country-image-container full-img border-4">
-
-                                <img src="../../../assets/images/store-pic-2.png" alt="">
+                <img src="../../../assets/images/{{img}}" alt="">
 
 
-                            </div>
-                        </ng-template>
-                        <ng-template swiperSlide>
-                            <div class="section country-image-container full-img border-4">
-
-                                <img src="../../../assets/images/store-pic-3.png" alt="">
-
-
-                            </div>
-                        </ng-template>
-                        <div class="swiper-pagination"></div>
-                    </swiper>
+            </div>
+        </ng-template>
+        <div class="swiper-pagination"></div>
+    </swiper>
 
 </div>
 
 <div class="Address">
-  <h4>  Vous nous trouverez au <strong>Square Center en Zone 3</strong>
-    Entre Leader Price et Chez Richard’s
-    <br>
-    <br>
-    On vous accueille du <strong>Lundi au Samedi de 9h à 20h</strong>
-    <br>
-    <br>
-    Notre Barista d’exception vous attend au<strong> Coin Café </strong> pour vous faire découvrir nos cafés de spécialités!
-</h4>
-    
+    <h4> Vous nous trouverez au <strong>Square Center en Zone 3</strong>
+        Entre Leader Price et Chez Richard’s
+        <br>
+        <br>
+        On vous accueille du <strong>Lundi au Samedi de 9h à 20h</strong>
+        <br>
+        <br>
+        Notre Barista d’exception vous attend au<strong> Coin Café </strong> pour vous faire découvrir nos cafés de
+        spécialités!
+    </h4>
+
 </div>

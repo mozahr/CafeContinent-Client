@@ -17,7 +17,7 @@ import SwiperCore, {
   styleUrls: ['./local-shop.component.scss']
 })
 export class LocalShopComponent implements OnInit {
-
+  storeImages = ['store-pic-1.png','store-pic-2.png','store-pic-3.png','store-pic-1.png']
   constructor() { }
 
   ngOnInit(): void {

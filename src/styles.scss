@@ -1,4 +1,22 @@
 /* You can add global styles to this file, and also import other style files */
+
+/* fonts */
+@font-face {
+    font-family: 'AvenirNext-Regular';
+    src: url('./assets/fonts/AvenirNext-Regular-08.ttf') format('truetype');
+}
+@font-face {
+    font-family: 'AvenirNext-UltraLight';
+    src: url('./assets/fonts/AvenirNext-UltraLight-11.ttf') format('truetype');
+}
+@font-face {
+    font-family: 'AvenirNext-Medium';
+    src: url('./assets/fonts/AvenirNext-Medium-06.ttf') format('truetype');
+}
+@font-face {
+    font-family: 'AvenirNext-Bold';
+    src: url('./assets/fonts/AvenirNext-Bold-01.ttf') format('truetype');
+}
 @import "~bootstrap/dist/css/bootstrap.min.css";
-@import "assets/css/style.css";
 @import '~swiper/swiper-bundle.min.css';
+@import "assets/css/style.css";

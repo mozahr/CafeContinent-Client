@@ -12,6 +12,7 @@ import { OurCoffeComponent } from './our-coffe/our-coffe.component';
 import { ShopComponent } from './shop/shop.component';
 import { EShopComponent } from './shop/e-shop/e-shop.component';
 import { LocalShopComponent } from './shop/local-shop/local-shop.component';
+import { MainNavDirective } from './directives/main-nav.directive';
 @NgModule({
   declarations: [
     AppComponent,
@@ -22,7 +23,8 @@ import { LocalShopComponent } from './shop/local-shop/local-shop.component';
     OurCoffeComponent,
     ShopComponent,
     EShopComponent,
-    LocalShopComponent
+    LocalShopComponent,
+    MainNavDirective
   ],
   imports: [
     BrowserModule,

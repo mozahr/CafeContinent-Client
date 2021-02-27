@@ -1,22 +1,89 @@
-.notre-caffe {
+@import "../../styles/base/variables";
+
+.swiper-hero-branding {
+    .hero-banner-title {
+        background-color: rgb(40 37 47 / 80%);
+        text-align: center;
+        width: 95%;
+
+        h4 {
+            color: white;
+            padding: 20px 0px;
+        }
+    }
+    .hero-title {
+        color: white;
+        display: inline-block;
+        width: 95%;
+        background-color: rgb(20 18 25 / 36%);
+        font-size: 22px;
+        line-height: 30px;
+    
+    }
+    .hero-subtitle-2 {
+        cursor: pointer;
+    }
+
+    .hero-branding-img-1 {
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-position: center;
+    }
 }
 
-.hero-title {
-    color: white;
+.hero-bottom-section {
+    .arrow-animation {
+        span {
+            cursor: pointer;
+        }
+    }
 }
 
-.hero-banner-title {
-    margin-top: 20px;
-    background-color: rgba(239, 237, 245, 0.8);
-    text-align: center;
+.caf-black-nav {
+    .title {
+        font-family: "AvenirNext-Regular";
+        font-size: 23px;
+        color: white;
+    }
 }
 
-.hero-banner-title h4 {
-    color: black;
-    padding: 20px 0px;
+.two-col-container{
+
+    .col-auto{
+        display: none;
+    }
+    .text-container {
+        margin-right: 15px;
+        margin-left: 15px;
+
+        h4{
+            font-weight: unset;
+            font-family: "AvenirNext-Bold";
+        }
+    }
 }
-.hero-branding-img-1 {
-    background-repeat: no-repeat;
-    background-size: cover;
-    background-position: center;
+
+@media screen and (min-width: $lg) {
+    .swiper-hero-branding {
+
+        .hero-banner-title {
+            padding-top: 120px;
+        }
+        .hero-title {
+            width: 65%;
+            font-size: 40px;
+            line-height: 50px;
+        }
+
+    }
+    .two-col-container{
+
+        .col-auto{
+            display: flex;
+        }
+        .text-container {
+            margin-right: 0px;
+            margin-left: 0;
+        }
+    }
 }

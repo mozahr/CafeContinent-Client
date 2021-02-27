@@ -17,7 +17,7 @@
     --gray: #bdc3c7;
     --gray-light: #d9dcde;
     --gray-dark: #95a5a6;
-    --primary: #03f1c5;
+    --primary: #5a444b;
     --secondary: #6c757d;
     --success: #54d98c;
     --info: #1abc9c;
@@ -64,9 +64,8 @@ p{
 }
 h1, h2, h3, h4, h5, h6,
 .h1, .h2, .h3, .h4, .h5, .h6{
-    font-family: 'Muli', sans-serif;
+    font-family: 'AvenirNext-Regular', sans-serif;
 	margin-bottom: 0.5rem;
-	font-weight: 800;
 	line-height: 1.25;
 	letter-spacing: 1px;
 	color: var(--dark-blue);
@@ -9728,7 +9727,7 @@ body.triger-anime .load-anime-top {
 		display: none;
 	}
 	.padding-top-mob-nav{
-		padding-top: 20px;
+		/* padding-top: 20px; */
 	}
 	.navbar-collapse{
 		padding-left: 20px;
@@ -9802,10 +9801,10 @@ body.triger-anime .load-anime-top {
 		mix-blend-mode: normal !important;
 	}
 	.full-height-xl {
-		height: calc(100vh - 79px) !important;
+		height: calc(100vh - 52px) !important
 	}
 	.min-full-height.full-height-xl {
-		min-height: calc(100vh - 79px) !important;
+		min-height: calc(100vh - 52px) !important
 	}
 	.hero-radius-img-anime {
 		top: 50%;

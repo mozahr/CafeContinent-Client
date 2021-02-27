@@ -1,123 +1,65 @@
 <div class="section over-hide full-height full-height-xl">
-    <div class="section swiper-hero-branding">
-        <div class="swiper-wrapper">
-            <div class="swiper-slide">
-                <div class="section full-height full-height-xl hero-branding-img-1"
-                    style="background-image:url(../../assets/images/home-hero-1.png)!important">
-                    <div class="hero-banner-title">
-                        <h4>
-                            Le premier café de spécialité torréfié en Côte d’Ivoire
-                        </h4>
-                    </div>
-                    <div class="hero-center-section text-center">
-                        <div class="section parallax-fade-hero">
-                            <h1 class="mb-4 hero-title" data-swiper-parallax-y="150"
-                                data-swiper-parallax-duration="700">
-                                Des cafés arabica délicatement sélectionnés <br> dans les quatre coins du monde, purs ou
-                                <br> mélangés à du robusta Ivoirien de grande qualité.<br>
-                                Le tout, torréfié avec soin en Côte d’Ivoire!
+    <swiper class="section swiper-hero-branding" [autoplay]="true">
+        <ng-template swiperSlide *ngFor="let img of heroImages">
+            <div class="section full-height full-height-xl hero-branding-img-1"
+                [style.background-image]="'url(../../assets/images/' + img + ')'">
+                <div class="hero-banner-title">
+                    <h4>
+                        Le premier café de spécialité torréfié en Côte d’Ivoire
+                    </h4>
+                </div>
+                <div class="hero-center-section text-center">
+                    <div class="section parallax-fade-hero">
+                        <h1 class="mb-4 hero-title" data-swiper-parallax-y="150" data-swiper-parallax-duration="700">
+                            Des cafés arabica délicatement sélectionnés dans les quatre coins du monde, purs ou
+                            mélangés à du robusta Ivoirien de grande qualité.
+                            Le tout, torréfié avec soin en Côte d’Ivoire!
 
-                            </h1>
-                        </div>
-                        <div class="section parallax-fade-hero-2">
-                            <p class="lead mb-5 mb-sm-0 text-center font-weight-400" data-swiper-parallax-y="-100"
-                                data-swiper-parallax-duration="1000">
-                                <span class="hero-subtitle-2 color-black">
-                                    En Découvrir Plus
-                                </span>
-                            </p>
-                        </div>
+                        </h1>
                     </div>
+                    <!-- <div class="section parallax-fade-hero-2">
+                        <p class="lead mb-5 mb-sm-0 text-center font-weight-400" data-swiper-parallax-y="-100"
+                            data-swiper-parallax-duration="1000">
+                            <span class="hero-subtitle-2 color-black">
+                                En Découvrir Plus
+                            </span>
+                        </p>
+                    </div> -->
                 </div>
             </div>
-            <div class="swiper-slide">
-                <div class="section full-height full-height-xl hero-branding-img-1"
-                    style="background-image:url(../../assets/images/home-hero-2.png)!important">
-                    <div class="hero-banner-title">
-                        <h4>
-                            Le premier café de spécialité torréfié en Côte d’Ivoire
-                        </h4>
-                    </div>
-                    <div class="hero-center-section text-center">
-                        <div class="section parallax-fade-hero">
-                            <h1 class="mb-4 hero-title" data-swiper-parallax-y="150"
-                                data-swiper-parallax-duration="700">
-                                Des cafés arabica délicatement sélectionnés <br> dans les quatre coins du monde, purs ou
-                                <br> mélangés à du robusta Ivoirien de grande qualité.<br>
-                                Le tout, torréfié avec soin en Côte d’Ivoire!
-
-                            </h1>
-                        </div>
-                        <div class="section parallax-fade-hero-2">
-                            <p class="lead mb-5 mb-sm-0 text-center font-weight-400" data-swiper-parallax-y="-100"
-                                data-swiper-parallax-duration="1000">
-                                <span class="hero-subtitle-2 color-black">
-                                    En Découvrir Plus
-                                </span>
-                            </p>
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <div class="swiper-slide">
-                <div class="section full-height full-height-xl hero-branding-img-1"
-                    style="background-image:url(../../assets/images/home-hero-3.png)!important">
-                    <div class="hero-banner-title">
-                        <h4>
-                            Le premier café de spécialité torréfié en Côte d’Ivoire
-                        </h4>
-                    </div>
-                    <div class="hero-center-section text-center">
-                        <div class="section parallax-fade-hero">
-                            <h1 class="mb-4 hero-title" data-swiper-parallax-y="150"
-                                data-swiper-parallax-duration="700">
-                                Des cafés arabica délicatement sélectionnés <br> dans les quatre coins du monde, purs ou
-                                <br> mélangés à du robusta Ivoirien de grande qualité.<br>
-                                Le tout, torréfié avec soin en Côte d’Ivoire!
-
-                            </h1>
-                        </div>
-                        <div class="section parallax-fade-hero-2">
-                            <p class="lead mb-5 mb-sm-0 text-center font-weight-400" data-swiper-parallax-y="-100"
-                                data-swiper-parallax-duration="1000">
-                                <span class="hero-subtitle-2 color-black">
-                                    En Découvrir Plus
-                                </span>
-                            </p>
-                        </div>
-                    </div>
-                </div>
-            </div>
-
-
-        </div>
+        </ng-template>
         <div class="swiper-pagination fade-hero"></div>
         <div class="swiper-button-prev fade-hero"><i class="uil uil-minus size-18"></i></div>
         <div class="swiper-button-next fade-hero"><i class="uil uil-plus size-18"></i></div>
-    </div>
+    </swiper>
+
+
+
     <div class="hero-bottom-section arrow-animation">
         <div class="section-1400">
             <div class="container-fluid">
                 <div class="row justify-content-center">
                     <div class="col-auto fade-hero">
-                        <a href="#sectionContinents" class="text-decoration-none" data-gal='m_PageScroll2id'>
-                            <p class="font-weight-700 mb-0 size-18 text-vertical color-gray">
-                                Notre Caffe
-                                <i class="uil uil-arrow-down size-20 mt-3"></i>
+                        <span (click)="scrollToElement(quisommenous)"  class="text-decoration-none" data-gal='m_PageScroll2id'>
+                            <p class="font-weight-700 mb-0 size-18 text-vertical">
+                                Découvrir Plus
+                                <i class="uil uil-arrow-down mt-3"></i>
                             </p>
-                        </a>
+                        </span>
                     </div>
                 </div>
             </div>
         </div>
     </div>
 </div>
-<div class="section over-hide py-3 bg-black landing-shadow-5 d-none d-xl-block z-bigger-i-2 mt-5 mb-5">
+
+
+<div #quisommenous class="section over-hide py-3 bg-black landing-shadow-5  z-bigger-i-2 mb-5 caf-black-nav">
     <div class="section-1400">
         <div class="container-fluid">
             <div class="row justify-content-center">
 
-                <span class=" size-20 mx-3">
+                <span class=" mx-3 title">
                     Qui sommes-nous?
                 </span>
 
@@ -127,7 +69,7 @@
     </div>
 </div>
 
-<section class="section-1400">
+<section class="section-1400 two-col-container">
     <div class="row justify-content-center padding-bottom-80"
         data-scroll-reveal="enter bottom move 40px over 0.5s after 0.3s" data-scroll-reveal-id="1"
         data-scroll-reveal-initialized="true" data-scroll-reveal-complete="true">
@@ -142,7 +84,7 @@
                 </div>
             </a>
         </div>
-        <div class="col-sm-10 col-md-9 col-lg-5 align-self-center px-lg-4 px-xl-5 mt-5 mt-lg-0">
+        <div class="text-container col-sm-10 col-md-9 col-lg-5 align-self-center px-lg-4 px-xl-5 mt-5 mt-lg-0">
             <div class="row">
                 <div class="col-auto">
                     <h2 class="mb-0 py-2 pr-3 port-v-line font-weight-900 color-gray-light">
@@ -181,7 +123,7 @@
                 </div>
             </a>
         </div>
-        <div class="col-sm-10 col-md-9 col-lg-5 align-self-center px-lg-4 px-xl-5 mt-5 mt-lg-0 order-lg-first">
+        <div class="text-container col-sm-10 col-md-9 col-lg-5 align-self-center px-lg-4 px-xl-5 mt-5 mt-lg-0 order-lg-first">
             <div class="row">
                 <div class="col-auto">
                     <h2 class="mb-0 py-2 pr-3 port-v-line font-weight-900 color-gray-light">
@@ -219,7 +161,7 @@
                 </div>
             </a>
         </div>
-        <div class="col-sm-10 col-md-9 col-lg-5 align-self-center px-lg-4 px-xl-5 mt-5 mt-lg-0">
+        <div class="text-container col-sm-10 col-md-9 col-lg-5 align-self-center px-lg-4 px-xl-5 mt-5 mt-lg-0">
             <div class="row">
                 <div class="col-auto">
                     <h2 class="mb-0 py-2 pr-3 port-v-line font-weight-900 color-gray-light">
@@ -256,7 +198,7 @@
                 </div>
             </a>
         </div>
-        <div class="col-sm-10 col-md-9 col-lg-5 align-self-center px-lg-4 px-xl-5 mt-5 mt-lg-0 order-lg-first">
+        <div class="text-container col-sm-10 col-md-9 col-lg-5 align-self-center px-lg-4 px-xl-5 mt-5 mt-lg-0 order-lg-first">
             <div class="row">
                 <div class="col-auto">
                     <h2 class="mb-0 py-2 pr-3 port-v-line font-weight-900 color-gray-light">
@@ -295,7 +237,7 @@
                 </div>
             </a>
         </div>
-        <div class="col-sm-10 col-md-9 col-lg-5 align-self-center px-lg-4 px-xl-5 mt-5 mt-lg-0">
+        <div class="text-container col-sm-10 col-md-9 col-lg-5 align-self-center px-lg-4 px-xl-5 mt-5 mt-lg-0">
             <div class="row">
                 <div class="col-auto">
                     <h2 class="mb-0 py-2 pr-3 port-v-line font-weight-900 color-gray-light">
@@ -328,7 +270,7 @@
                 </div>
             </a>
         </div>
-        <div class="col-sm-10 col-md-9 col-lg-5 align-self-center px-lg-4 px-xl-5 mt-5 mt-lg-0 order-lg-first">
+        <div class="text-container col-sm-10 col-md-9 col-lg-5 align-self-center px-lg-4 px-xl-5 mt-5 mt-lg-0 order-lg-first">
             <div class="row">
                 <div class="col-auto">
                     <h2 class="mb-0 py-2 pr-3 port-v-line font-weight-900 color-gray-light">
@@ -368,7 +310,7 @@
                 </div>
             </a>
         </div>
-        <div class="col-sm-10 col-md-9 col-lg-5 align-self-center px-lg-4 px-xl-5 mt-5 mt-lg-0">
+        <div class="text-container col-sm-10 col-md-9 col-lg-5 align-self-center px-lg-4 px-xl-5 mt-5 mt-lg-0">
             <div class="row">
                 <div class="col-auto">
                     <h2 class="mb-0 py-2 pr-3 port-v-line font-weight-900 color-gray-light">
