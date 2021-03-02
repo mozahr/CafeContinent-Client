@@ -23,13 +23,15 @@ footer {
         order: 0;
         margin-bottom:20px ;
         .logo {
-            width: 50%;
+            width: 70%;
         }
     }
     .section-3{
         order: 2;
         .social-icon{
             height: 40px;
+
+            background-color: white;
         }
     }
 }
@@ -44,11 +46,16 @@ footer {
             order:1;
             margin-bottom:0;
             .logo {
-                width: 100%;
+                width: 75%;
             }
         }
         .section-3{
             order:2;
+            text-align: right;
+
+            .social-icon-container{
+                text-align: right;
+            }
         }
     }
 }

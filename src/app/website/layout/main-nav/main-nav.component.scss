@@ -1,5 +1,8 @@
+
+@import "../../../styles/base/variables";
 .nav-link{
     font-family: 'AvenirNext-Medium';
+    font-size:  17px;
 }
 .dropdown-item{
     font-family: 'AvenirNext-Medium';
@@ -7,3 +10,13 @@
 .navbar-brand img{
     height: 80%;
 }
+
+
+@media screen and (min-width:$xl){
+    .navbar-nav.right{
+        li{
+            margin-left: auto;
+        }
+    }
+}
+

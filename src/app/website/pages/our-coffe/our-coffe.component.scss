@@ -22,12 +22,14 @@
     .continent-item {  
         flex-direction: row;
         min-height: 200px;
+        border: solid 2px black;
 
+   
         .title{
             min-width: 300px;
 
             span{
-                font-size: 22px;
+                font-size: 27px;
             }
             img{
 

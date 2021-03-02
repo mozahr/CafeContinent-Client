@@ -15,6 +15,7 @@ export class WebsiteComponent implements OnInit {
       filter(event => event instanceof NavigationEnd)
     )
       .subscribe((event:any) => {
+
         this.addPadding = event.url !== '/';
       });
   }

@@ -1,5 +1,5 @@
 <div class="section over-hide full-height full-height-xl">
-    <swiper class="section swiper-hero-branding" [autoplay]="true">
+    <swiper class="section swiper-hero-branding" [autoplay]="false">
         <ng-template swiperSlide *ngFor="let img of heroImages">
             <div class="section full-height full-height-xl hero-branding-img-1"
                 [style.background-image]="'url(../../../assets/images/' + img + ')'">
@@ -17,14 +17,14 @@
 
                         </h1>
                     </div>
-                    <!-- <div class="section parallax-fade-hero-2">
+                    <div class="section parallax-fade-hero-2">
                         <p class="lead mb-5 mb-sm-0 text-center font-weight-400" data-swiper-parallax-y="-100"
                             data-swiper-parallax-duration="1000">
                             <span class="hero-subtitle-2 color-black">
                                 En Découvrir Plus
                             </span>
                         </p>
-                    </div> -->
+                    </div>
                 </div>
             </div>
         </ng-template>
@@ -35,7 +35,7 @@
 
 
 
-    <div class="hero-bottom-section arrow-animation">
+    <!-- <div class="hero-bottom-section arrow-animation">
         <div class="section-1400">
             <div class="container-fluid">
                 <div class="row justify-content-center">
@@ -51,11 +51,11 @@
                 </div>
             </div>
         </div>
-    </div>
+    </div> -->
 </div>
 
 
-<div #quisommenous class="section over-hide py-3 bg-black landing-shadow-5  z-bigger-i-2 mb-5 caf-black-nav">
+<div #quisommenous class="section over-hide bg-black landing-shadow-5  z-bigger-i-2 mb-5 caf-black-nav">
     <app-black-bar [type]="'title'" [text]="'Qui sommes-nous?'"></app-black-bar>
 </div>
 

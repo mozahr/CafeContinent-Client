@@ -9,6 +9,7 @@
         h4 {
             color: white;
             padding: 20px 0px;
+
         }
     }
     .hero-title {
@@ -67,8 +68,8 @@
 @media screen and (min-width: $lg) {
     .swiper-hero-branding {
         .hero-title {
-            width: 65%;
-            font-size: 40px;
+            width: 54%;
+            font-size: 31px;
             line-height: 50px;
         }
     }
@@ -87,6 +88,13 @@
     .swiper-hero-branding {
         .hero-banner-title {
             padding-top: 120px;
+            h4{
+                font-size: 28px;
+            }
         }
+    }
+    .hero-title {
+  
+        font-size: 31px;
     }
 }

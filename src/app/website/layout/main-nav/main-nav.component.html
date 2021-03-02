@@ -15,7 +15,7 @@
               <div class="collapse navbar-collapse" id="navbarSupportedContent">
                 <ul class="col-4 navbar-nav pt-4 pt-xl-0 pr-0">
                   <li class="nav-item">
-                    <a class="nav-link" [routerLinkActive]="['active']" [routerLink]="['ourcoffe']"> Cafés </a>
+                    <a class="nav-link" [routerLinkActive]="['active']" [routerLink]="['ourcoffe']" > Cafés </a>
                   </li>
 
                   <li class="nav-item dropdown" appNavDropdown>
@@ -50,15 +50,16 @@
                   </a>
                 </div>
 
-                <div class="col-12 col-lg-4 text-xl-right header-links">
-                  <a class="nav-link" role="button" [routerLinkActive]="['active']" href="">Contact</a>
-
-                  <a href="" class="btn btn-icon-transparent btn-44 mt-4 mt-xl-0 position-relative" data-toggle="modal"
+                <ul class="col-4 navbar-nav pr-0  right">
+                  <li class="nav-item">
+                    <a class="nav-link" [routerLinkActive]="['active']" [routerLink]="['contact']" > Contact </a>
+                  </li>
+                  <!-- <a href="" class="btn btn-icon-transparent btn-44 mt-4 mt-xl-0 position-relative" data-toggle="modal"
                     data-target="#modalCart">
                     <i class="uil uil-cart size-20"></i>
                     <span class="btn-small-icon bg-primary color-white cart-qty"></span>
-                  </a>
-                </div>
+                  </a> -->
+                </ul>
 
               </div>
             </nav>

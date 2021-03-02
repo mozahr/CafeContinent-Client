@@ -1,0 +1,10 @@
+@import '../styles/base/variables';
+
+.padding-clear-nav{
+    padding-top: 0;
+}
+@media screen and (min-width:$xl){
+    .padding-clear-nav{
+        padding-top: 120px;
+    }
+}
