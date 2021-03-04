@@ -16,6 +16,10 @@ import { PartnersComponent } from './pages/partners/partners.component';
 import { FormationComponent } from './pages/formation/formation.component';
 import { BlackBarComponent } from './components/black-bar/black-bar.component';
 import { WebsiteRoutingModule } from './website-routing.module';
+import { ContinentSelectionComponent } from './pages/our-coffe/continent-selection/continent-selection.component';
+import { ContinentCountriesComponent } from './pages/our-coffe/continent-countries/continent-countries.component';
+import { ContactUsComponent } from './pages/contact-us/contact-us.component';
+import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 
 @NgModule({
   declarations: [
@@ -31,12 +35,16 @@ import { WebsiteRoutingModule } from './website-routing.module';
     MainNavDirective,
     PartnersComponent,
     FormationComponent,
-    BlackBarComponent
+    BlackBarComponent,
+    ContinentSelectionComponent,
+    ContinentCountriesComponent,
+    ContactUsComponent
   ],
   imports: [
     BrowserModule,
     WebsiteRoutingModule,
     SwiperModule,
+    BrowserAnimationsModule
   ],
   providers: [],
   // bootstrap: [WebsiteComponent]

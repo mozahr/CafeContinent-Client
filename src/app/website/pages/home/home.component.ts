@@ -14,7 +14,7 @@ SwiperCore.use([Autoplay]);
 
 export class HomeComponent implements OnInit {
   
-  heroImages = ['home-hero-1-min.png','home-hero-2-min.png','home-hero-3-min.png','4.png','7.png']
+  heroImages = ['home-hero-1-min.png','home-hero-2-min.png','home-hero-3-min.png','home-hero-4-min.png','home-hero-5-min.png']
   constructor() { }
 
   ngOnInit(): void {

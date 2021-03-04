@@ -1,6 +1,66 @@
-.coming-soon{
-    height: calc(100vh - 433px);
-    display: flex;
-    align-items: center;
-    justify-content: center;
+@import "../../../../styles/base/variables";
+
+.intro {
+    padding-top: 60px;
+    padding-bottom: 60px;
+    text-align: left;
+    h3 {
+        font-size: 24px;
+    }
+}
+.color-filter {
+    color: #276b91;
+}
+.color-espresso {
+    color: #b32b02;
+}
+.color-cap {
+    color: #8f9d23;
+}
+.shop {
+    margin-bottom: 60px;
+    .title {
+        margin-bottom: 28px;
+        margin-top: 28px;
+    }
+    .no-cafe {
+        .item {
+            display: block;
+            padding: 15px;
+            text-align: center;
+
+            h4 {
+                font-family: "AvenirNext-Bold";
+            }
+            img {
+                height: 130px;
+                display: block;
+                margin: auto;
+                max-width: 100%;
+            }
+        }
+    }
+    .equipment {
+        .item {
+            display: block;
+            padding: 15px;
+            h4 {
+                text-align: center;
+                font-family: "AvenirNext-Bold";
+            }
+            img {
+                height: 130px;
+                display: block;
+                margin: auto;
+                max-width: 100%;
+            }
+        }
+    }
+}
+@media screen and (min-width: $md) {
+}
+@media screen and (min-width: $lg) {
+    .intro {
+        text-align: center;
+    }
 }

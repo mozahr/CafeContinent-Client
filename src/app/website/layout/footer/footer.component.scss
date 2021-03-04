@@ -10,9 +10,13 @@ footer {
         margin-bottom:20px;
         .address {
             color: white;
+            line-height: 30px;
+            font-size: 18px;
             .mail-link {
-                color: orange;
+                // color: orange;
+                color: white;
                 text-decoration: underline;
+           
             }
         }
     }
@@ -30,14 +34,16 @@ footer {
         order: 2;
         .social-icon{
             height: 40px;
-
-            background-color: white;
         }
     }
 }
 
 @media screen and (min-width: $lg) {
     footer {
+        .title{
+            margin-bottom: 30px;
+        }
+
         .section-1 {
             order:0;
             margin-bottom:0;
@@ -52,7 +58,6 @@ footer {
         .section-3{
             order:2;
             text-align: right;
-
             .social-icon-container{
                 text-align: right;
             }

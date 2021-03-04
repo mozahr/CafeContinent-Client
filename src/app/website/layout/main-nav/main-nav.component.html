@@ -11,6 +11,12 @@
                 aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
                 <span class="navbar-toggler-icon"></span>
               </button>
+              <div class="d-xl-none m-auto">
+                <a class="navbar-brand animsition-link d-inline-block" [routerLinkActive]="['active']"
+                  [routerLink]="['']">
+                  <img src="../../../assets/images/logo.png" alt="logo" />
+                </a>
+              </div>
 
               <div class="collapse navbar-collapse" id="navbarSupportedContent">
                 <ul class="col-4 navbar-nav pt-4 pt-xl-0 pr-0">
@@ -52,7 +58,7 @@
 
                 <ul class="col-4 navbar-nav pr-0  right">
                   <li class="nav-item">
-                    <a class="nav-link" [routerLinkActive]="['active']" [routerLink]="['contact']" > Contact </a>
+                    <a class="nav-link" [routerLinkActive]="['active']" [routerLink]="['contact-us']" > Contact </a>
                   </li>
                   <!-- <a href="" class="btn btn-icon-transparent btn-44 mt-4 mt-xl-0 position-relative" data-toggle="modal"
                     data-target="#modalCart">

@@ -1,0 +1,93 @@
+@import "../../../../styles/base/variables";
+
+.continent-item {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    // margin-top: 60px;
+    // margin-bottom: 60px;
+
+    .title {
+        text-align: center;
+        span {
+       
+    font-family: 'AvenirNext-Bold';
+        }
+    }
+    .pattern {
+        height: 150px;
+        width: 100%;
+    }
+}
+
+.two-col-container {
+    margin-top: 120px;
+    margin-bottom: 60px;
+    .col-auto {
+        display: none;
+    }
+    .text-container {
+        margin-right: 15px;
+        margin-left: 15px;
+
+        h4 {
+            font-weight: unset;
+            font-family: "AvenirNext-Bold";
+        }
+        .title {
+            font-family: "AvenirNext-Bold";
+            text-transform: uppercase;
+            font-size: 36px;
+        }
+    }
+    .portfolio-wrap-1{
+        box-shadow:  0 6px 28px rgb(23 23 23 / 15%)
+    }
+    .list {
+        .item {
+            display: flex;
+
+            .text {
+                flex: 1;
+                min-width: 125px;
+                font-family: "AvenirNext-Medium";
+                font-size: 21px;
+            }
+            .value {
+                flex: 3;
+                font-size: 18px;
+            }
+        }
+    }
+}
+@media screen and (min-width: $md) {
+    .continent-item {
+        flex-direction: row;
+        min-height: 155px;
+        border: solid 2px black;
+
+        .title {
+            min-width: 400px;
+
+            span {
+                font-size: 36px;
+            }
+        }
+        .pattern {
+            height: 150px;
+        }
+    }
+}
+@media screen and (min-width: $lg) {
+    .two-col-container {
+        .col-auto {
+            display: flex;
+            height: 66px;
+        }
+
+        .text-container {
+            margin-right: 0px;
+            margin-left: 0;
+        }
+    }
+}

@@ -1,33 +1,51 @@
 @import "../../../styles/base/variables";
 
 .swiper-hero-branding {
-    .hero-banner-title {
-        background-color: rgb(40 37 47 / 80%);
-        text-align: center;
+    .title-bar {
         width: 100%;
-
-        h4 {
-            color: white;
-            padding: 20px 0px;
-
-        }
+        height: 96px;
+        background-color: rgba(40, 37, 47, 0.8);
+        position: absolute;
+        z-index: 2;
     }
-    .hero-title {
-        color: white;
-        display: inline-block;
-        width: 95%;
-        background-color: rgb(20 18 25 / 36%);
-        font-size: 22px;
-        line-height: 30px;
-    }
-    .hero-subtitle-2 {
-        cursor: pointer;
-    }
-
-    .hero-branding-img-1 {
+    .content {
+        display: flex;
+        justify-content: center;
         background-repeat: no-repeat;
         background-size: cover;
         background-position: center;
+
+        .centered-col {
+            display: inline-block;
+            position: relative;
+
+            .hero-banner-title {
+                text-align: center;
+                width: 100%;
+
+                h4 {
+                    color: white;
+                    padding: 20px 0px;
+                    position: relative;
+                    z-index: 3;
+                }
+            }
+            .middle-text {
+                color: white;
+                display: inline-block;
+                width: 95%;
+                background-color: rgb(20 18 25 / 36%);
+                font-size: 22px;
+                line-height: 30px;
+            }
+            .hero-subtitle-2 {
+                cursor: pointer;
+            }
+            .action {
+                position: absolute;
+                top: 80%;
+            }
+        }
     }
 }
 
@@ -60,17 +78,28 @@
             font-family: "AvenirNext-Bold";
         }
     }
-    .words-from-founder{
+    .words-from-founder {
         font-family: "AvenirNext-Italic";
     }
 }
-
+@media screen and (min-width: $md) {
+    .swiper-hero-branding {
+        .title-bar {
+            height: 67px;
+  
+        }
+    }
+}
 @media screen and (min-width: $lg) {
     .swiper-hero-branding {
-        .hero-title {
-            width: 54%;
-            font-size: 31px;
-            line-height: 50px;
+        .content {
+            .centered-col {
+                .middle-text {
+                    width: 100%;
+                    font-size: 31px;
+                    line-height: 50px;
+                }
+            }
         }
     }
     .two-col-container {
@@ -78,6 +107,7 @@
             display: flex;
             height: 66px;
         }
+
         .text-container {
             margin-right: 0px;
             margin-left: 0;
@@ -86,15 +116,20 @@
 }
 @media screen and (min-width: $xl) {
     .swiper-hero-branding {
-        .hero-banner-title {
+        .title-bar {
             padding-top: 120px;
-            h4{
-                font-size: 28px;
+            height: 192px;
+        }
+        .content {
+            .centered-col {
+                .hero-banner-title {
+                    padding-top: 120px;
+
+                    h4 {
+                        font-size: 28px;
+                    }
+                }
             }
         }
-    }
-    .hero-title {
-  
-        font-size: 31px;
     }
 }

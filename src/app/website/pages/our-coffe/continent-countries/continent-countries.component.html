@@ -1,0 +1,58 @@
+<div class=" continent-item txt-{{selectedContinent}}">
+    <div class="title"><span>{{continents[selectedContinent].continentName}}</span></div>
+    <div>
+        <img class="pattern" src="../../../assets/images/{{continents[selectedContinent].bannerimage}}" alt="">
+    </div>
+</div>
+
+
+<section class="section-1400 two-col-container">
+
+    <div *ngFor="let country of continents[selectedContinent].countries;index as i">
+
+
+        <div class="row justify-content-center padding-bottom-80"
+            data-scroll-reveal="enter bottom move 40px over 0.5s after 0.3s" data-scroll-reveal-id="1"
+            data-scroll-reveal-initialized="true" data-scroll-reveal-complete="true">
+            <div class="col-sm-10 col-md-9 col-lg-6 align-self-center">
+                <!-- <a href="" class="animsition-link"> -->
+                    <div class="portfolio-wrap-1 img-wrap">
+                        <img src="../../../assets/images/{{country.image}}" alt="">
+                    </div>
+                <!-- </a> -->
+            </div>
+            <div class="text-container col-sm-10 col-md-9 col-lg-6 align-self-center px-lg-4 px-xl-5 mt-5 mt-lg-0"
+                [ngClass]="{'order-lg-first': i%2 != 0}">
+                <div class="row">
+                    <div class="col-auto">
+                        <h2
+                            class="mb-0 py-2 pr-3 port-v-line font-weight-900 color-gray-light txt-{{selectedContinent}}">
+                            {{i + 1}}
+                        </h2>
+                    </div>
+                    <div class="col">
+                        <h4 class="mb-4 pt-3 title txt-{{selectedContinent}} ">
+                            {{country.countryname}}
+                        </h4>
+                        <div class="list">
+                            <div class="item" *ngFor="let attribute of country.attributes;index as e">
+                                <h5 class="text">
+                                    {{attribute.key}}
+                                </h5>
+                                <p class="value">
+                                    {{attribute.value}}
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+
+    </div>
+
+
+
+
+</section>

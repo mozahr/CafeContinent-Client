@@ -1,26 +1,30 @@
 <div class="section over-hide full-height full-height-xl">
     <swiper class="section swiper-hero-branding" [autoplay]="false">
         <ng-template swiperSlide *ngFor="let img of heroImages">
-            <div class="section full-height full-height-xl hero-branding-img-1"
+            <div class="content section full-height full-height-xl hero-branding-img-1"
                 [style.background-image]="'url(../../../assets/images/' + img + ')'">
-                <div class="hero-banner-title">
-                    <h4>
-                        Le premier café de spécialité torréfié en Côte d’Ivoire
-                    </h4>
-                </div>
-                <div class="hero-center-section text-center">
-                    <div class="section parallax-fade-hero">
-                        <h1 class="mb-4 hero-title" data-swiper-parallax-y="150" data-swiper-parallax-duration="700">
-                            Des cafés arabica délicatement sélectionnés dans les quatre coins du monde, purs ou
-                            mélangés à du robusta Ivoirien de grande qualité.
-                            Le tout, torréfié avec soin en Côte d’Ivoire!
-
-                        </h1>
+                <div class="title-bar"></div>
+                <div class="centered-col">
+                    <div class="hero-banner-title">
+                        <h4>
+                            Le premier café de spécialité torréfié en Côte d’Ivoire
+                        </h4>
                     </div>
-                    <div class="section parallax-fade-hero-2">
+                    <div class="hero-center-section text-center">
+                        <div class="section parallax-fade-hero">
+                            <h1 class="mb-4 middle-text" data-swiper-parallax-y="150"
+                                data-swiper-parallax-duration="700">
+                                Des cafés arabica délicatement sélectionnés dans les quatre coins du monde, purs ou
+                                mélangés à du robusta Ivoirien de grande qualité.
+                                Le tout, torréfié avec soin en Côte d’Ivoire!
+
+                            </h1>
+                        </div>
+                    </div>
+                    <div class="section parallax-fade-hero-2 action">
                         <p class="lead mb-5 mb-sm-0 text-center font-weight-400" data-swiper-parallax-y="-100"
                             data-swiper-parallax-duration="1000">
-                            <span class="hero-subtitle-2 color-black">
+                            <span class="hero-subtitle-2 color-black" (click)="scrollToElement(quisommenous)">
                                 En Découvrir Plus
                             </span>
                         </p>
@@ -66,7 +70,7 @@
         <div class="col-sm-10 col-md-9 col-lg-7 align-self-center">
             <a href="" class="animsition-link">
                 <div class="portfolio-wrap-1 img-wrap">
-                    <img src="../../../assets/images/who-we-are-pic-1.png" alt="">
+                    <img src="../../../assets/images/who-we-are-pic-1-min.png" alt="">
                     <!-- <div class="wrap-mask"></div>
                     <p class="lead mb-0 font-weight-700 text-right color-white">BRANDING</p>
                     <div class="port-wrap-text text-center-v color-white">Discover<i
@@ -105,7 +109,7 @@
         <div class="col-sm-10 col-md-9 col-lg-7 align-self-center">
             <a href="" class="animsition-link">
                 <div class="portfolio-wrap-1 img-wrap">
-                    <img src="../../../assets/images/who-we-are-pic-2.png" alt="">
+                    <img src="../../../assets/images/who-we-are-pic-2-min.png" alt="">
                     <!-- <div class="wrap-mask"></div>
                     <p class="lead mb-0 font-weight-700 text-right color-white">ART DIRECTION</p>
                     <div class="port-wrap-text text-center-v color-white">Discover<i
@@ -144,7 +148,7 @@
         <div class="col-sm-10 col-md-9 col-lg-7 align-self-center">
             <a href="" class="animsition-link">
                 <div class="portfolio-wrap-1 img-wrap">
-                    <img src="../../../assets/images/who-we-are-pic-3.png" alt="">
+                    <img src="../../../assets/images/who-we-are-pic-3-min.png" alt="">
                     <!-- <div class="wrap-mask"></div>
                     <p class="lead mb-0 font-weight-700 text-right color-white">BRANDING</p>
                     <div class="port-wrap-text text-center-v color-white">Discover<i
@@ -181,7 +185,7 @@
         <div class="col-sm-10 col-md-9 col-lg-7 align-self-center">
             <a href="" class="animsition-link">
                 <div class="portfolio-wrap-1 img-wrap">
-                    <img src="../../../assets/images/who-we-are-pic-4.png" alt="">
+                    <img src="../../../assets/images/who-we-are-pic-4-min.png" alt="">
                     <!-- <div class="wrap-mask"></div>
                     <p class="lead mb-0 font-weight-700 text-right color-white">ART DIRECTION</p>
                     <div class="port-wrap-text text-center-v color-white">Discover<i
@@ -221,7 +225,7 @@
         <div class="col-sm-10 col-md-9 col-lg-7 align-self-center">
             <a href="" class="animsition-link">
                 <div class="portfolio-wrap-1 img-wrap">
-                    <img src="../../../assets/images/who-we-are-pic-5.png" alt="">
+                    <img src="../../../assets/images/who-we-are-pic-5-min.png" alt="">
                     <!-- <div class="wrap-mask"></div>
                     <p class="lead mb-0 font-weight-700 text-right color-white">BRANDING</p>
                     <div class="port-wrap-text text-center-v color-white">Discover<i
@@ -254,7 +258,7 @@
         <div class="col-sm-10 col-md-9 col-lg-7 align-self-center">
             <a href="" class="animsition-link">
                 <div class="portfolio-wrap-1 img-wrap">
-                    <img src="../../../assets/images/who-we-are-pic-6.png" alt="">
+                    <img src="../../../assets/images/who-we-are-pic-6-min.png" alt="">
                     <!-- <div class="wrap-mask"></div>
                     <p class="lead mb-0 font-weight-700 text-right color-white">ART DIRECTION</p>
                     <div class="port-wrap-text text-center-v color-white">Discover<i
@@ -295,7 +299,7 @@
         <div class="col-sm-10 col-md-9 col-lg-7 align-self-center">
             <a href="" class="animsition-link">
                 <div class="portfolio-wrap-1 img-wrap">
-                    <img src="../../../assets/images/who-we-are-pic-7.png" alt="">
+                    <img src="../../../assets/images/who-we-are-pic-7-min.png" alt="">
                     <!-- <div class="wrap-mask"></div>
                     <p class="lead mb-0 font-weight-700 text-right color-white">BRANDING</p>
                     <div class="port-wrap-text text-center-v color-white">Discover<i
@@ -319,7 +323,7 @@
                         <br>
                         Que ce soit de la sélection des grains verts en passant par la torréfaction jusqu’à la
                         préparation en tasse, toutes les étapes sont revisitées en détails pour vous offrir le meilleur
-                        café de Côte d’Ivoire. »        
+                        café de Côte d’Ivoire. »
                     </p>
                     <p>Hadi Beydoun</p>
 

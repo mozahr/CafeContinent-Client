@@ -1,0 +1,44 @@
+@import "../../../../styles/base/variables";
+.continent-bars{
+    // margin-top: 60px;
+    // margin-bottom: 60px;
+}
+.continent-item {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    &:hover{
+        opacity: 0.4;
+    }
+
+    .title {
+        text-align: center;
+        span {
+            font-size: 22px;
+        }
+    }
+    .pattern {
+        height: 150px;
+        width: 100%;
+    }
+}
+@media screen and (min-width: $md) {
+    .continent-item {
+        flex-direction: row;
+        min-height: 155px;
+        border: solid 2px black;
+
+        .title {
+            min-width: 350px;
+
+            span {
+                font-size: 27px;
+            }
+
+        }
+        .pattern{
+            height: 150px;
+        }
+    }
+}
