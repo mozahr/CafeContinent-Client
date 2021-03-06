@@ -25,16 +25,16 @@
                   </li>
 
                   <li class="nav-item dropdown" appNavDropdown>
-                    <a class="nav-link" [routerLinkActive]="['active']" [routerLink]="['shop']">
+                    <a class="nav-link " [ngClass]="{'active': eshopActive.isActive || shopActive.isActive }" >
                       Boutiques
                     </a>
                     <div class="dropdown-menu">
                       <ul class="p-0 m-0">
                         <li class="nav-item">
-                          <a class="dropdown-item animsition-link" [routerLink]="['/e-shop']">E-Shop</a>
+                          <a routerLinkActive #eshopActive="routerLinkActive" class="dropdown-item animsition-link" [routerLink]="['/e-shop']">E-Shop</a>
                         </li>
                         <li class="nav-item">
-                          <a class="dropdown-item animsition-link" [routerLink]="['shop']">
+                          <a routerLinkActive #shopActive="routerLinkActive" c class="dropdown-item animsition-link" [routerLink]="['/shop']">
                             Boutique</a>
                         </li>
                       </ul>

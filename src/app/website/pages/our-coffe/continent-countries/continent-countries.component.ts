@@ -24,8 +24,8 @@ export class ContinentCountriesComponent implements OnInit {
           { "key": "origine", "value": "Niery" },
           { "key": "altitude", "value": "1400m" },
           { "key": "extraction", "value": "Méthode Humide (Lavé)" },
-          { "key": "variete", "value": "Arabica (Uteuzi Jimbo Regional Select)" },
-          { "key": "arome", "value": "Chocolat, Caramel, Raisins blancs" }]
+          { "key": "variétés", "value": "Arabica (Uteuzi Jimbo Regional Select)" },
+          { "key": "arômes", "value": "Chocolat, Caramel, Raisins blancs" }]
       },
       {
         "countryname": "Tanzanie",
@@ -34,8 +34,8 @@ export class ContinentCountriesComponent implements OnInit {
           { "key": "origine", "value": "Twiga" },
           { "key": "altitude", "value": "1400-1800m" },
           { "key": "extraction", "value": "Méthode Humide (Lavé)" },
-          { "key": "variete", "value": "Arabica (Kents, Bourbon, Typica)" },
-          { "key": "arome", "value": "Fruits" }]
+          { "key": "variétés", "value": "Arabica (Kents, Bourbon, Typica)" },
+          { "key": "arômes", "value": "Fruits" }]
       }
       ]
     },
@@ -49,8 +49,8 @@ export class ContinentCountriesComponent implements OnInit {
           { "key": "origine", "value": "Chimaltenango, Huehuetenango, Quiche, San Marcos, Solola" },
           { "key": "altitude", "value": "1500- 1900m" },
           { "key": "extraction", "value": "Méthode Humide (Lavé)" },
-          { "key": "variete", "value": "Arabica (Bourbon, Catura, Catuai)" },
-          { "key": "arome", "value": "Variés" }]
+          { "key": "variétés", "value": "Arabica (Bourbon, Catura, Catuai)" },
+          { "key": "arômes", "value": "Variés" }]
       },
       {
         "countryname": "COSTA RICA",
@@ -59,8 +59,8 @@ export class ContinentCountriesComponent implements OnInit {
           { "key": "origine", "value": "El Peresozo, Las Lomas" },
           { "key": "altitude", "value": "1540m" },
           { "key": "extraction", "value": "Méthode Sèche (Naturel)" },
-          { "key": "variete", "value": "Arabica (variés)" },
-          { "key": "arome", "value": "Chocolat Noir, Fruits Rouges" }]
+          { "key": "variétés", "value": "Arabica (variés)" },
+          { "key": "arômes", "value": "Chocolat Noir, Fruits Rouges" }]
       }
       ]
     },
@@ -74,8 +74,8 @@ export class ContinentCountriesComponent implements OnInit {
           { "key": "origine", "value": "Veracruz, Coatepec" },
           { "key": "altitude", "value": "1405m" },
           { "key": "extraction", "value": "Méthode Humide (Lavé)" },
-          { "key": "variete", "value": "Arabica (Bourbon, Garnica, Sarchimor)" },
-          { "key": "arome", "value": "Amandes, Caramel, Fruits Tropicaux" }]
+          { "key": "variétés", "value": "Arabica (Bourbon, Garnica, Sarchimor)" },
+          { "key": "arômes", "value": "Amandes, Caramel, Fruits Tropicaux" }]
       }]
     },
     "southamerica": {
@@ -88,8 +88,8 @@ export class ContinentCountriesComponent implements OnInit {
           { "key": "origine", "value": "Caldas" },
           { "key": "altitude", "value": "1750m" },
           { "key": "extraction", "value": "Méthode Humide (Lavé)" },
-          { "key": "variete", "value": "Arabica (Castillo, Colombia,Caturo)" },
-          { "key": "arome", "value": "Chocolat, Fruits Rouges" }]
+          { "key": "variétés", "value": "Arabica (Castillo, Colombia,Caturo)" },
+          { "key": "arômes", "value": "Chocolat, Fruits Rouges" }]
       },
       {
         "countryname": "Pérou",
@@ -98,8 +98,8 @@ export class ContinentCountriesComponent implements OnInit {
           { "key": "origine", "value": "ChaCha" },
           { "key": "altitude", "value": "1600-2000m" },
           { "key": "extraction", "value": "Méthode Humide (Lavé)" },
-          { "key": "variete", "value": "Arabica (variés)" },
-          { "key": "arome", "value": "Pamplemousse, Caramel, Biscuit" }]
+          { "key": "variétés", "value": "Arabica (variés)" },
+          { "key": "arômes", "value": "Pamplemousse, Caramel, Biscuit" }]
       }]
     },
     "asia": {
@@ -112,8 +112,8 @@ export class ContinentCountriesComponent implements OnInit {
           { "key": "origine", "value": "Shan" },
           {"key": "altitude", "value": "1100-1600m" },
           {"key": "extraction", "value": "Méthode Humide (Lavé)" },
-          {"key": "variete", "value": "Arabica (Variés)" },
-          {"key": "arome", "value": "Thé Vert, Chocolat, Epices, Noisettes" }]
+          {"key": "variétés", "value": "Arabica (Variés)" },
+          {"key": "arômes", "value": "Thé Vert, Chocolat, Epices, Noisettes" }]
       }]
       }
   }

@@ -10,6 +10,13 @@
 .navbar-brand img{
     height: 80%;
 }
+.dropdown{
+
+    .nav-link:first-of-type{
+        cursor:default;
+    }
+
+}
 
 
 @media screen and (min-width:$xl){

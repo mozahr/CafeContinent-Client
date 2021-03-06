@@ -1,10 +1,11 @@
 import { Component, OnInit } from '@angular/core';
-import { SwiperOptions } from 'swiper';
+import { EffectFade  } from 'swiper';
 import SwiperCore, {
   Autoplay
 } from 'swiper/core';
 
-SwiperCore.use([Autoplay]);
+SwiperCore.use([Autoplay,EffectFade ]);
+
 
 @Component({
   selector: 'app-home',
@@ -13,7 +14,7 @@ SwiperCore.use([Autoplay]);
 })
 
 export class HomeComponent implements OnInit {
-  
+  // var nextElement = {nextEl: }
   heroImages = ['home-hero-1-min.png','home-hero-2-min.png','home-hero-3-min.png','home-hero-4-min.png','home-hero-5-min.png']
   constructor() { }
 

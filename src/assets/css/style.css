@@ -5422,9 +5422,12 @@ body.modal-open {
     height: 40px;
     z-index: 10;
     cursor: pointer;
-    background-image: none;
     transition: all 200ms linear;
+	background-position: center;
+	background-repeat: no-repeat;
+	background-size: 50%;
 }
+
 .swiper-hero-branding .swiper-button-next:hover,
 .swiper-hero-branding .swiper-button-prev:hover{
     border-color: var(--primary);
@@ -5437,11 +5440,13 @@ body.modal-open {
     right: 30px;
     left: auto;
     margin-top: 5px;
+	background-image: url(../images/arrow-left.svg);
 }
 .swiper-hero-branding .swiper-button-next{
     right: 30px;
     left: auto;
     margin-top: -45px;
+	background-image: url(../images/arrow-right.svg);
 }
 .swiper-hero-branding .swiper-button-next:active,
 .swiper-hero-branding .swiper-button-prev:active,
