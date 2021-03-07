@@ -1,10 +1,11 @@
 import { Component, OnInit } from '@angular/core';
 import { EffectFade  } from 'swiper';
 import SwiperCore, {
-  Autoplay
+  Autoplay,
+  Navigation
 } from 'swiper/core';
 
-SwiperCore.use([Autoplay,EffectFade ]);
+SwiperCore.use([Autoplay,EffectFade,Navigation ]);
 
 
 @Component({

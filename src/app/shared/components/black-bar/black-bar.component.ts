@@ -1,5 +1,6 @@
 import { Component, Input, OnInit } from '@angular/core';
-import { blackBarLinks } from "../../../interfaces/interfaces";
+import { blackBarLinks } from "../../interfaces/interfaces";
+
 
 @Component({
   selector: 'app-black-bar',
