@@ -18,49 +18,81 @@
     color: #8f9d23;
 }
 .shop {
-    margin-bottom: 60px;
     .title {
-        margin-bottom: 28px;
-        margin-top: 28px;
-        font-family: "AvenirNext-Bold";
+        h3 {
+            margin-bottom: 28px;
+            margin-top: 28px;
+            font-family: "AvenirNext-bold";
+        }
+    }
+
+    .item {
+        margin-bottom: 40px;
+
+        h6 {
+            font-family: "AvenirNext-bold";
+        }
+
+        p {
+            font-size: 14px;
+        }
     }
     .no-cafe {
-        .item {
-            display: block;
-            padding: 15px;
-            text-align: center;
+        margin-bottom: 60px;
+    }
+    .no-equipment {
+        margin-bottom: 60px;
+    }
+}
+// .shop {
+//     margin-bottom: 60px;
+//     .title {
+//         margin-bottom: 28px;
+//         margin-top: 28px;
+//         font-family: "AvenirNext-Bold";
+//     }
+//     .no-cafe {
+//         .item {
+//             display: block;
+//             padding: 15px;
+//             text-align: center;
 
-            h4 {
-                font-family: "AvenirNext-Bold";
-            }
-            img {
-                height: 130px;
-                display: block;
-                margin: auto;
-                max-width: 100%;
-            }
-        }
-    }
-    .equipment {
-        .item {
-            display: block;
-            padding: 15px;
-            h4 {
-                text-align: center;
-                font-family: "AvenirNext-Bold";
-            }
-            img {
-                height: 130px;
-                display: block;
-                margin: auto;
-                max-width: 100%;
-            }
-        }
-    }
-}
-@media screen and (min-width: $md) {
-}
+//             h4 {
+//                 font-family: "AvenirNext-Bold";
+//             }
+//             img {
+//                 height: 130px;
+//                 display: block;
+//                 margin: auto;
+//                 max-width: 100%;
+//             }
+//         }
+//     }
+//     .equipment {
+//         .item {
+//             display: block;
+//             padding: 15px;
+//             h4 {
+//                 text-align: center;
+//                 font-family: "AvenirNext-Bold";
+//             }
+//             img {
+//                 height: 130px;
+//                 display: block;
+//                 margin: auto;
+//                 max-width: 100%;
+//             }
+//         }
+//     }
+// }
+// @media screen and (min-width: $md) {
+// }
 @media screen and (min-width: $lg) {
+    .shop {
+        .item {
+            margin-bottom: 0;
+        }
+    }
     .intro {
         text-align: center;
     }
